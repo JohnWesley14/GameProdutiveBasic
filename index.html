@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <title>Document</title>
-   <script src="script.js" defer></script>
+   
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 </head>
 <body>
    <div class="all">
@@ -17,29 +18,39 @@
                <li><a href="/">Pets</a> </li>
                <li><a href="/">Shop</a> </li>
             </ul>
-            <img class="Image-Profile"src="https://avatars.githubusercontent.com/u/112788953?v=4" alt="Foto de perfil">
+            <span class="image">
+               <img class="Image-Profile"src="https://avatars.githubusercontent.com/u/112788953?v=4" alt="Foto de perfil" onclick="modal()">
+               <div class="modal">
+                  <ul>
+                     <li><a href="/">Profile</a></li>
+                     <li><a href="/">Logout</a></li>
+                     
+                  </ul>
+               </div>
+            </span>
+            
          </nav>
       </header>
       <main>
          <section>
             
-            <p>Escolha até quando você irá estudar</p>
+            <p>Escolha quantos minutos você irá estudar</p>
             <div class="list">
                <ul>
-                  <li><input type="button" value="5"></li>
-                  <li><input type="button" value="10"></li>
-                  <li><input type="button" value="15"></li>
-                  <li><input type="button" value="20"></li>
-                  <li><input type="button" value="25"></li>
-                  <li><input type="button" value="30"></li>
+                  <li><input type="button" class="5" value="5" onclick="minutos(5)"></li>
+                  <li><input type="button" class="10" value="10" onclick="minutos(10)"></li>
+                  <li><input type="button" class="15" value="15" onclick="minutos(15)"></li>
+                  <li><input type="button" class="20" value="20" onclick="minutos(20)"></li>
+                  <li><input type="button" class="25" value="25" onclick="minutos(25)"></li>
+                  <li><input type="button" class="30" value="30" onclick="minutos(30)"></li>
                </ul>
                <ul>
-                  <li><input type="button" value="35"></li>
-                  <li><input type="button" value="40"></li>
-                  <li><input type="button" value="45"></li>
-                  <li><input type="button" value="50"></li>
-                  <li><input type="button" value="55"></li>
-                  <li><input type="button" value="60"></li>
+                  <li><input type="button" class="35" value="35" onclick="minutos(35)"></li>
+                  <li><input type="button" class="40" value="40" onclick="minutos(40)"></li>
+                  <li><input type="button" class="45" value="45" onclick="minutos(45)"></li>
+                  <li><input type="button" class="50" value="50" onclick="minutos(50)"></li>
+                  <li><input type="button" class="55" value="55" onclick="minutos(55)"></li>
+                  <li><input type="button" class="60" value="60" onclick="minutos(60)"></li>
                </ul>
             </div>
             
@@ -49,5 +60,6 @@
          </section>
       </main>
    </div>
+   <script src="script.js" defer></script>
 </body>
 </html>
