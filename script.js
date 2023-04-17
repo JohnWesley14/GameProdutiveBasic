@@ -22,7 +22,7 @@ function contador(){
       if(contador < 60){
          segundos()
       } else{
-         h5.innerHTML = `Você está estudando por ${contador/60} minutos`
+         h5.innerHTML = `Você está estudando por ${(contador/60).toFixed(0)} minutos`
       }
    contador++
    }, 1000);
